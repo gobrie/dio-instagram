@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.celular {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.celular img {
+    height: 50rem;
+}
+
+.login-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gainsboro;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 34rem;
+    padding: 1.3rem 0;
+    background-color: white;
+    
+}
+
+.login:nth-child(1) {
+    min-height: 19rem;
+}
+
+.login-foto {
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    height: 6rem;
+}
+
+.login-logo {
+    display: flex;
+    height: 3rem;
+}
+
+.btn{
+    color: white;
+    background-color: #0095f6;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+a {
+    color: #0095f6;
+}
+
+p {
+    color: silver;
+}
+
+.senha {
+    margin-top: 20px;
+    display: flex;
+    border: 1px solid gainsboro;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.3rem 0;
+    background-color: white;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.senha p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.download-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.download-logo {
+    margin-top: 10px;
+}
+
+.download-logo img {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .celular {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+    }
+    
+    .login .senha {
+        border: 1px solid transparent;
+    }
+}
